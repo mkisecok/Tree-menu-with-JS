@@ -52,6 +52,25 @@
       </ul>
     </li>
   </ul>
+  <script>
+
+    const ourDiv = document.querySelector('#tree');
+    
+
+    ourDiv.onclick=(event)=>
+    { 
+      if(event.target.firstElementChild.style.display == "none" && event.target.id != 'tree')
+    {
+        event.target.firstElementChild.style.display = "block";
+        
+    }
+    else if(event.target.style.display !== "none" && event.target.id != 'tree')
+    {
+        event.target.firstElementChild.style.display = "none";
+        
+    }
+    }
+  </script>
 
 </body>
 </html>
